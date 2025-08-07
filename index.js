@@ -4,7 +4,7 @@ const PORT = process.env.PORT;
 
 //endpoint de respuesta
 app.get('/', (_req, res)=>{
-    res.send('Integracion')
+    res.send('Integracion');
 });
 
 app.listen(PORT,() => {
