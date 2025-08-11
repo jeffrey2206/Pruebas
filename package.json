@@ -10,13 +10,13 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": "",
   "dependencies": {
     "express": "^5.1.0"
   },
   "devDependencies": {
-    "eslint": "^9.32.0",
+    "eslint": "^9.33.0",
     "jest": "^30.0.5"
   },
-  "type": "module"
+  "type": "module",
+  "description": ""
 }

@@ -1,3 +1,5 @@
+//sum.test.js
+
 const suma = require('./sum');
 
 test('Suma 1+2 debe dar 3', ()=>{
