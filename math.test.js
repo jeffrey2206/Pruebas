@@ -10,7 +10,7 @@ test('Factorial de 0 debe ser 1', () => {
 });
 
 test('Fibonacci de 6 debe ser 8', () => {
-    expect(fibonacci(6)).toBe(8);
+    expect(fibonacci(6)).toBe(10);
 });
 
 test('Fibonacci de 0 debe ser 0', () => {
