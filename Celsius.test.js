@@ -1,4 +1,4 @@
-import { toCelsius, toFahrenheit, movingAverage } from '../Lab2-3P/Celsius';
+const { toCelsius, toFahrenheit, movingAverage } = require('./Celsius');
 
 describe('toCelsius', () => {
   test('convierte 32°F a 0.0°C', () => {
