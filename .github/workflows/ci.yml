@@ -27,6 +27,14 @@ jobs:
 
       - name: Ejecutar pruebas
         run: npm test
+      
+      - name: Run tests
+        run: npm test -- --coverage
+      
+      - name: Upload coverage to Codecov
+        uses: codecov/codecov-action@v3
+        with:
+          file: ./coverage/lcov.info
 
       - name: Simular despliegue
         run: |
