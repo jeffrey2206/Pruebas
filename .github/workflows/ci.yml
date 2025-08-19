@@ -1,6 +1,6 @@
 #ci.yaml
 
-name: CI/CD workflow
+name: Prueba Conjunta
 on:
   push:
     branches: [main]
