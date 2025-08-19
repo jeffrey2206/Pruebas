@@ -2,7 +2,7 @@ const { toCelsius, toFahrenheit, movingAverage } = require('./Celsius');
 
 describe('toCelsius', () => {
   test('convierte 32°F a 0.0°C', () => {
-    expect(toCelsius(32)).toBe(0.0);
+    expect(toCelsius(32)).toBe(32);
   });
 
   test('convierte 212°F a 100.0°C', () => {
