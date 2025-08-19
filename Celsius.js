@@ -1,20 +1,20 @@
-export function toCelsius(f) {
+function toCelsius(f) {
   if (typeof f !== 'number' || !isFinite(f)) {
     throw new TypeError('La temperatura debe ser un número finito');
   }
   const celsius = (f - 32) * 5/9;
-  return Math.round(celsius * 10) / 10;
+  return parseFloat(celsius.toFixed(1)); // Redondear a 1 decimal como esperan los tests
 }
 
-export function toFahrenheit(c) {
+function toFahrenheit(c) {
   if (typeof c !== 'number' || !isFinite(c)) {
     throw new TypeError('La temperatura debe ser un número finito');
   }
   const fahrenheit = (c * 9/5) + 32;
-  return Math.round(fahrenheit * 10) / 10;
+  return parseFloat(fahrenheit.toFixed(1)); // Redondear a 1 decimal
 }
 
-export function movingAverage(series, window) {
+function movingAverage(series, window) {
   if (!Array.isArray(series) || series.some(item => typeof item !== 'number' || !isFinite(item))) {
     throw new TypeError('La serie debe contener solo números finitos');
   }
@@ -28,7 +28,7 @@ export function movingAverage(series, window) {
     const windowValues = series.slice(i, i + window);
     const sum = windowValues.reduce((acc, val) => acc + val, 0);
     const average = sum / window;
-    result.push(Math.round(average * 100) / 100);
+    result.push(parseFloat(average.toFixed(2))); // Redondear a 2 decimales como esperan los tests
   }
   
   return result;
