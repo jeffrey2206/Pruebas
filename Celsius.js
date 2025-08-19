@@ -1,6 +1,6 @@
 function toCelsius(f) {
   if (typeof f !== 'number' || !isFinite(f)) {
-    throw new TypeError('La temperatura debe ser un número finito');
+    throw new TypeError("La temperatura debe ser un número finito");
   }
   const celsius = (f - 32) * 5/9;
   return parseFloat(celsius.toFixed(1)); // Redondear a 1 decimal como esperan los tests
