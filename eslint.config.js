@@ -1,4 +1,3 @@
-//eslint.config.js
 
 export default[
     {
@@ -9,8 +8,8 @@ export default[
         },
         rules: {
             semi: ['error', 'always'],
-            quotes: ['error', 'single']
+            quotes: ['error', 'single'],
+            'indent': ['error', 2]
         },
     }
 ];
-
